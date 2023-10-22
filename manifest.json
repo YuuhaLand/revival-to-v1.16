@@ -1,0 +1,18 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Revival to v1.16",
+    "description": "変わってしまったUIを1.16風にできる限り戻しました!!!\nby YuuhaLand",
+    "version": [ 1, 0, 0 ],
+    "uuid": "1aba7688-f80a-4b4f-8c86-333e47977043",
+    "min_engine_version": [ 1, 13, 0 ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "description": "",
+      "version": [ 1, 0, 0 ],
+      "uuid": "09949765-d82a-4675-8cc6-749333269d9d"
+    }
+  ]
+}

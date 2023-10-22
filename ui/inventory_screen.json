@@ -1,0 +1,15 @@
+{
+  "namespace": "crafting",
+  
+  "construction_tab": {
+    "$unchecked_default_image": "textures/ui/TabTopBackLeftMost",
+    "$unchecked_hover_image": "textures/ui/TabTopBackLeftMost",
+    "$unchecked_locked_image": "textures/ui/TabTopBackLeftMost",
+    "$unchecked_locked_hover_image": "textures/ui/TabTopBackLeftMost",
+
+    "$checked_default_image": "textures/ui/TabTopFrontLeftMost",
+    "$checked_hover_image": "textures/ui/TabTopFrontLeftMost",
+    "$checked_locked_image": "textures/ui/TabTopFrontLeftMost",
+    "$checked_locked_hover_image": "textures/ui/TabTopFrontLeftMost"
+  }
+}

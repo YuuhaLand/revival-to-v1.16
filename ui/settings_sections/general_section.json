@@ -1,0 +1,484 @@
+{
+  "namespace": "general_section",
+
+  "accessibility_button": {
+    "$toggle_view_binding_name": "accessibility_button_toggle",
+    "$glyph_texture": "textures/ui/accessibility_glyph",
+    "$glyph_color_texture": "textures/ui/accessibility_glyph_color",
+    "$glyph_size": [ 19, 20 ],
+    "$button_text": "options.accessibility",
+    "$toggle_property_bag": {
+      "#panel_title": "options.accessibility.title"
+    }
+  },
+
+  "account_button": {
+    "ignored": true
+  },
+
+  "general_button@settings_common.section_toggle_base": {
+    "$toggle_view_binding_name": "general_button_toggle",
+    "$glyph_texture": "textures/ui/profile_glyph",
+    "$glyph_color_texture": "textures/ui/profile_glyph_color",
+    "$glyph_size": [ 11, 12 ],
+    "$button_text": "options.profile",
+    "$toggle_property_bag": {
+      "#panel_title": "options.profileTitle"
+    }
+  },
+
+	"general_tab_section": {
+    "controls": [
+      {
+        "switch_accounts@general_section.switch_accounts_panel": {
+          "ignored": "$ignore_profile_switch_account_button"
+        }
+      },
+      {
+        "use_sso@settings_common.option_toggle": {
+          "ignored": "$ignore_profile_sso_toggle",
+          "$option_label": "options.adUseSingleSignOn",
+          "$option_binding_name": "#ad_use_single_sign_on",
+          "$toggle_name": "ad_use_single_sign_on"
+        }
+      },
+      {
+        "name_controls@settings_common.option_custom_control": {
+          "ignored": "$education_edition",
+          "$option_label": "options.name",
+          "$control_name": "general_section.name_controls",
+          "bindings": [
+            {
+              "binding_name": "#can_change_name",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "signin_controls@settings_common.option_custom_control": {
+          "$control_name": "general_section.signin_controls",
+          "ignored": "$education_edition",
+          "bindings": [
+            {
+              "binding_name": "#not_logged_in",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "gamertag_controls@settings_common.option_custom_control": {
+          "$show_option_label": false,
+          "$control_name": "general_section.gamertag_controls",
+          "bindings": [
+            {
+              "binding_name": "#logged_in",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "auto_update_mode_dropdown@settings_common.option_dropdown": {
+          "ignored": "($is_console or $is_settopbox or $win10_edition or $osx_edition or $education_edition)",
+          "$option_label": "options.autoUpdateMode",
+          "$dropdown_content": "general_section.auto_update_mode_dropdown_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "auto_update_mode_dropdown",
+          "$options_dropdown_toggle_label_binding": "#auto_update_mode_dropdown_toggle_label",
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
+        }
+      },
+      {
+        "auto_update_enabled_toggle@settings_common.option_toggle": {
+          "ignored": "((not $is_console and not $is_settopbox and not $win10_edition and not $osx_edition) or $nx_os)",
+          "$option_label": "options.autoUpdateEnabled",
+          "$option_binding_name": "#auto_update_enabled",
+          "$toggle_name": "auto_update_enabled"
+        }
+      },
+      {
+        "cross_platform_enabled_toggle@settings_common.option_toggle": {
+          "ignored": "(not $supports_cross_platform_play_toggle)",
+          "$option_label": "options.crossPlatformPlay",
+          "$option_binding_name": "#crossplatform_toggle",
+          "$option_enabled_binding_name": "#crossplatform_toggle_enabled",
+          "$toggle_name": "crossplatform_toggle"
+        }
+      },
+      {
+        "option_toggle_0@settings_common.option_toggle": {
+          "ignored": "($is_console or $is_settopbox or $win10_edition or $osx_edition or $education_edition_china)",
+          "$option_label": "options.allowCellularData",
+          "$option_binding_name": "#allow_cellular_data",
+          "$option_enabled_binding_name": "#allow_cellular_data_enabled",
+          "$toggle_name": "allow_cellular_data"
+        }
+      },
+      {
+        "option_toggle_1@settings_common.option_toggle": {
+          "$option_label": "options.websocketEncryption",
+          "$option_binding_name": "#websocket_encryption",
+          "$option_enabled_binding_name": "#websocket_encryption_enabled",
+          "$toggle_name": "websocket_encryption",
+          "ignored": "($console_edition or $education_edition_china)"
+        }
+      },
+      {
+        "only_allow_trusted_skins_toggle@settings_common.option_toggle": {
+          "$option_label": "options.onlyTrustedSkinsAllowed",
+          "$option_binding_name": "#only_trusted_skins_allowed",
+          "$option_enabled_binding_name": "#only_trusted_skins_allowed_enabled",
+          "$toggle_name": "only_trusted_skins_allowed"
+        }
+      },
+      {
+        "link_button@settings_common.link_button": {
+          "ignored": "(not $education_edition or $education_edition_china or $is_holographic or $fire_tv)",
+          "$button_text": "options.goToFeedbackWebsite",
+          "property_bag": {
+            "#hyperlink": "https://aka.ms/minecraftedusupport"
+          }
+        }
+      },
+      {
+        "spacer_0": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "file_storage_dropdown@settings_common.option_dropdown": {
+          "$option_label": "options.filelocation.title",
+          "ignored": "($is_holographic and $is_reality_mode)",
+          "visible": "($storage_location_switch_enabled and not $gear_vr)",
+          "$dropdown_content": "general_section.file_storage_location_content",
+          "$dropdown_area": "content_area",
+          "$dropdown_name": "file_storage_location",
+          "$option_enabled_binding_name": "#file_storage_location_enabled",
+          "$options_dropdown_toggle_label_binding": "#file_storage_location_toggle_label",
+          "$dropdown_scroll_content_size": [ "100%", "200%" ]
+        }
+      },
+      {
+        "file_storage_spacer": {
+          "ignored": "($is_holographic and $is_reality_mode)",
+          "type": "panel",
+          "visible": "($storage_location_switch_enabled and not $gear_vr)",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "clear_cache_button@settings_common.action_button": {
+          "ignored": "(not $is_pregame)",
+          "$clear_cache_button_text|default": "#none",
+          "$pressed_button_name": "button.clear_cache",
+          "$button_text": "$clear_cache_button_text"
+        }
+      },
+      {
+        "terms_and_conditions_link_button@settings_common.link_button": {
+          "ignored": "($is_holographic or $fire_tv or not $thirdpartyconsole)",
+          "$button_text": "options.termsAndConditions",
+          "bindings": [
+            {
+              "binding_name": "#terms_and_conditions_hyperlink",
+              "binding_name_override": "#hyperlink",
+              "binding_type": "global"
+            }
+          ]
+        }
+      },
+      {
+        "terms_and_conditions_content_popup_button@settings_common.action_button": {
+          "ignored": "((not $is_holographic and not $fire_tv) or not $thirdpartyconsole)",
+          "$pressed_button_name": "button.terms_and_conditions_popup",
+          "$button_text": "options.termsAndConditions"
+        }
+      },
+      {
+        "credits_button@settings_common.action_button": {
+          "$pressed_button_name": "button.credits",
+          "$button_text": "options.credits"
+        }
+      },
+      {
+        "unlink_msa_account@settings_common.action_button": {
+          // (never show in game) AND (never show on Publish builds unless its PS4)
+          "ignored": "((not $is_pregame) or ($is_publish and (not $is_ps4)))",
+          "$pressed_button_name": "button.unlink_msa",
+          "$button_text": "options.unlink_msa.button",
+          "bindings": [
+            {
+              "binding_name": "#logged_in",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "attribution_link_button@settings_common.link_button": {
+          "ignored": "($is_holographic or $fire_tv or $education_edition_china)",
+          "$button_text": "options.attribution",
+          "variables": [
+            {
+              "requires": "(not $nx_os)",
+              "$attribution_button_url": "https://www.minecraft.net/attribution/?hideChrome"
+            },
+            {
+              "requires": "($nx_os)",
+              "$attribution_button_url": "https://aka.ms/switchattribution"
+            }
+          ],
+          "property_bag": {
+            "#hyperlink": "$attribution_button_url"
+          }
+        }
+      },
+      {
+        "attribution_popup_button@settings_common.action_button": {
+          "ignored": "(not $is_holographic and not $fire_tv)",
+          "$pressed_button_name": "button.attribution_popup",
+          "$button_text": "options.attribution"
+        }
+      },
+      {
+        "licensed_content_link_button@settings_common.link_button": {
+          "ignored": "($is_holographic or $fire_tv or $education_edition)",
+          "$button_text": "options.licensed_content",
+          "variables": [
+            {
+              "requires": "(not $nx_os)",
+              "$licensed_content_button_url": "https://www.minecraft.net/licensed-content/?hideChrome"
+            },
+            {
+              "requires": "($nx_os)",
+              "$licensed_content_button_url": "https://aka.ms/switchcontent"
+            }
+          ],
+          "property_bag": {
+            "#hyperlink": "$licensed_content_button_url"
+          }
+        }
+      },
+      {
+        "licensed_content_popup_button@settings_common.action_button": {
+          "ignored": "(not $is_holographic and not $fire_tv)",
+          "$pressed_button_name": "button.licensed_content_popup",
+          "$button_text": "options.licensed_content",
+          "$focus_override_down": "FOCUS_OVERRIDE_STOP"
+        }
+      },
+      {
+        "third_party_copyright_info_label_panel": {
+          "ignored": "(not $display_copyright_info)",
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "spacer_0": {
+                "type": "panel",
+                "size": [ "100%", 4 ]
+              }
+            },
+            {
+              "copyright_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "text": "thirdPartyConsole.copyright"
+              }
+            },
+            {
+              "spacer_1": {
+                "type": "panel",
+                "size": [ "100%", 4 ]
+              }
+            },
+            {
+              "copyright_icon": {
+                "type": "image",
+                "size": [ 117, 41 ],
+                "texture": "textures/ui/third_party_copyright"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "spacer_10": {
+          "type": "panel",
+          "size": [ "100%", 1 ]
+        }
+      },
+      {
+        "section_panel_2": {
+          "ignored": "$education_edition",
+
+          "type": "panel",
+          "size": [ "100%", "100%c + 14px" ],
+          "controls": [
+            {
+              "section_divider": {
+                "type": "image",
+                "size": [ "100% - 30px", 1 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 3,
+                "texture": "textures/ui/list_item_divider_line_light"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "build_info_label_panel": {
+          "type": "stack_panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "version_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#version",
+                "bindings": [
+                  {
+                    "binding_name": "#version"
+                  }
+                ]
+              }
+            },
+            {
+              "build_id_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#build_id",
+                "bindings": [
+                  {
+                    "binding_name": "#build_id"
+                  }
+                ]
+              }
+            },
+            {
+              "protocol_version_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#protocol_version",
+                "bindings": [
+                  {
+                    "binding_name": "#protocol_version"
+                  }
+                ]
+              }
+            },
+            {
+              "device_id_label": {
+                "type": "label",
+                "size": [ "100%", "default" ],
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#device_id",
+                "bindings": [
+                  {
+                    "binding_name": "#device_id"
+                  }
+                ]
+              }
+            },
+            {
+              "MinecraftAccount_id_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "size": [ "100%", "default" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#MinecraftAccount_id",
+                "bindings": [
+                  {
+                    "binding_name": "#MinecraftAccount_id"
+                  }
+                ]
+              }
+            },
+            {
+              "commerce_id_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "size": [ "100%", "default" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#commerce_id",
+                "bindings": [
+                  {
+                    "binding_name": "#commerce_id"
+                  }
+                ]
+              }
+            },
+            {
+              "account_transfer_status_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "size": [ "100%", "default" ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#account_transfer_status",
+                "bindings": [
+                  {
+                    "binding_name": "#account_transfer_status"
+                  }
+                ]
+              }
+            },
+            {
+              "build_date_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#build_date",
+                "bindings": [
+                  {
+                    "binding_name": "#build_date"
+                  }
+                ]
+              }
+            },
+            {
+              "world_converter_label": {
+                "type": "label",
+                "color": "$body_text_color",
+                "offset": [ 2, 0 ],
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "text": "#world_conversion_version",
+                "bindings": [
+                  {
+                    "binding_name": "#world_conversion_version"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+	}
+}

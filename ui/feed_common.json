@@ -1,0 +1,19 @@
+{
+  "namespace": "feed_common",
+
+  "smooth_label": {
+    "font_type": "default"
+  },
+
+  "feed_label": {
+    "font_type": "default"
+  },
+
+  "item_label": {
+    "font_type": "default"
+  },
+
+  "no_feed_item_content": {
+    "font_type": "default"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "namespace": "resource_packs",
+
+  "size_label": {
+    "font_type": "default"
+  },
+
+  "description_label": {
+    "font_type": "default"
+  },
+
+  "pack_label": {
+    "font_type": "default"
+  },
+
+  "selected_stack_panel/world_template_option_lock_panel/option_info_label": {
+    "$used_fonttype": "default"
+  },
+
+  "selected_stack_panel/selected_pack_section/default_item/description_panel/white_label": {
+    "font_type": "default"
+  }
+}

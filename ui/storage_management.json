@@ -1,0 +1,10 @@
+{
+	"namespace": "storage_management",
+
+	"storage_header_panel/header_panel/file_storage_dropdown": {
+		"ignored": true
+	},
+	"storage_header_panel/header_panel/clear_cache_button_panel": {
+		"ignored": true
+	}
+}

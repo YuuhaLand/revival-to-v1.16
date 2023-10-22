@@ -1,0 +1,9 @@
+{
+  "namespace": "chat_settings",
+
+  "chat_settings_popup": {
+    "$screen_background_alpha": 0.4,
+    "$dialog_background_texture": "textures/ui/control",
+    "$fill_alpha": 0.8
+  }
+}

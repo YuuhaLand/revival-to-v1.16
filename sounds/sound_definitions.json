@@ -1,0 +1,51 @@
+{
+  "format_version" : "1.20.20",
+
+  "sound_definitions" : {
+    "block.bell.hit" : {
+       "__use_legacy_max_distance" : "true",
+       "category" : "block",
+       "max_distance" : null,
+       "min_distance" : null,
+       "sounds" : [
+        {
+          "name": "sounds/block/bell/bell_use01",
+          "pitch": 1,
+          "load_on_low_memory": true
+        },
+        {
+          "name": "sounds/block/bell/bell_use02",
+          "pitch": 1
+        }
+       ]
+    },
+    
+    "ambient.underwater.enter": {
+      "category" : "player",
+      "max_distance" : null,
+      "min_distance" : null,
+      "sounds": [
+        {
+          "load_on_low_memory" : true,
+          "name" : "sounds/random/splash",
+          "volume" : 0.15,
+          "pitch": 1.00
+        },
+        {
+          "name" : "sounds/random/splash",
+          "volume" : 0.15,
+          "pitch": 1.20
+        },
+        {
+          "name" : "sounds/random/splash",
+          "volume" : 0.15,
+          "pitch": 0.80
+        }
+      ]
+    },
+  
+    "ambient.underwater.exit": {
+      "sounds": []
+    }
+  }
+}

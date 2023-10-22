@@ -1,0 +1,85 @@
+{
+  "namespace": "start",
+
+  "text_panel": {
+    "type": "panel",
+    "size": [ "100%-2px", 10 ],
+    "offset": [ 0, -1 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "copyright@start.copyright": {}
+      },
+      {
+        "development_version@start.development_version": {
+          "ignored": "$is_publish"
+        }
+      },
+      {
+        "version@start.version": {}
+      }
+    ]
+  },
+
+  "copyright": {
+    "type": "panel",
+    "controls" : [
+      {
+        "label": {
+          "type": "label",
+          "color": "$main_header_text_color",
+          "layer": 2,
+          "text": "menu.copyright",
+          "size": [ "default", 10 ],
+          "max_size": [ "100%", "100%" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      }
+    ]
+  },
+
+  "development_version": {
+    "type": "label",
+    "color": "$main_header_text_color",
+    "layer": 2,
+    "text": "#development_version",
+    "size": [ "default", 10 ],
+    "max_size": [ "100%", "100%" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "bindings": [
+      {
+        "binding_name": "#development_version"
+      }
+    ],
+    "controls": []
+  },
+
+  "version": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ "50%", "100%" ],
+    "controls":[
+      {
+        "label": {            
+          "type": "label",
+          "color": "$main_header_text_color",
+          "layer": 2,
+          "text": "#version",
+          "size": [ "default", 10 ],
+          "max_size": [ "100%", "100%" ],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "bindings": [
+            {
+              "binding_name": "#version"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

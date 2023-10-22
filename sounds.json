@@ -1,0 +1,100 @@
+{
+  "block_sounds": {
+    "stem": {
+      "events": {
+        "button.click_off": {
+          "pitch": 0.50,
+          "sound": "click_off.nether_wood_button"
+        },
+        "button.click_on": {
+          "pitch": 0.60,
+          "sound": "click_on.nether_wood_button"
+        },
+        "door.close": {
+          "pitch": [
+            0.90,
+            1.0
+          ],
+          "sound": "close.nether_wood_door"
+        },
+        "door.open": {
+          "pitch": [
+            0.90,
+            1.0
+          ],
+          "sound": "open.nether_wood_door"
+        },
+        "fence_gate.close": {
+          "pitch": [
+            0.90,
+            1.0
+          ],
+          "sound": "close.nether_wood_fence_gate"
+        },
+        "fence_gate.open": {
+          "pitch": [
+            0.90,
+            1.0
+          ],
+          "sound": "open.nether_wood_fence_gate"
+        },
+        "break": {
+          "pitch": [
+            0.80,
+            1.0
+          ],
+          "sound": "dig.stem",
+          "volume": 1.0
+        },
+        "default": "",
+        "hit": {
+          "pitch": 0.50,
+          "sound": "hit.stem",
+          "volume": 0.340
+        },
+        "item.use.on" : {
+           "pitch" : 0.80,
+           "sound" : "use.stem"
+        },
+        "place": {
+          "pitch": [
+            0.80,
+            1.0
+          ],
+          "sound": "dig.stem",
+          "volume": 1.0
+        },
+        "power.off": {
+          "pitch": 0.50,
+          "sound": "random.click"
+        },
+        "power.on": {
+          "pitch": 0.60,
+          "sound": "random.click"
+        },
+        "pressure_plate.click_off": {
+          "sound": "click_off.nether_wood_pressure_plate"
+        },
+        "pressure_plate.click_on": {
+          "sound": "click_on.nether_wood_pressure_plate"
+        },
+        "trapdoor.close": {
+          "pitch": [
+            0.90,
+            1.0
+          ],
+          "sound": "close.nether_wood_trapdoor"
+        },
+        "trapdoor.open": {
+          "pitch": [
+            0.90,
+            1.0
+          ],
+          "sound": "open.nether_wood_trapdoor"
+        }
+      },
+      "pitch": 1.0,
+      "volume": 1.0
+    }
+  }
+}
