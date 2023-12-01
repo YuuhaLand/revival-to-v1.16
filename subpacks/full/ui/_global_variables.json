@@ -1,5 +1,6 @@
 {
   "$gote_supporter_enabled|default": false,
+  "$1_16_revival_enabled": true,
 
   //////// Text colors ////////
   "$generic_button_text_color": [ 1.0, 1.0, 1.0 ], // for those times you find a button that's kind of used but shouldn't...

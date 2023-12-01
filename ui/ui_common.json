@@ -3,5 +3,9 @@
 
   "single_line_label": {
     "$font_type": "default"
-	}
+	},
+
+  "screen_background": {
+    "alpha": 0.75
+  }
 }

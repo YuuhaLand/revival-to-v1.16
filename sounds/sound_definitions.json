@@ -19,29 +19,63 @@
         }
        ]
     },
+
+    "random.doors" : {
+       "__use_legacy_max_distance" : "true",
+       "category" : "block",
+       "max_distance" : null,
+       "min_distance" : null,
+       "sounds" : [
+          {
+             "load_on_low_memory" : true,
+             "name" : "sounds/random/door_close",
+             "pitch" : 1.0,
+             "volume" : 0.40
+          },
+          {
+             "name" : "sounds/random/door_close",
+             "pitch" : 1.10,
+             "volume" : 0.40
+          },
+          {
+             "name" : "sounds/random/door_close",
+             "pitch" : 0.90,
+             "volume" : 0.40
+          },
+          {
+             "load_on_low_memory" : true,
+             "name" : "sounds/random/door_open",
+             "pitch" : 1.0,
+             "volume" : 0.40
+          },
+          {
+             "name" : "sounds/random/door_open",
+             "pitch" : 1.10,
+             "volume" : 0.40
+          },
+          {
+             "name" : "sounds/random/door_open",
+             "pitch" : 0.90,
+             "volume" : 0.40
+          }
+       ]
+    },
+    
+    "random.splash" : {
+       "__use_legacy_max_distance" : "true",
+       "category" : "player",
+       "max_distance" : null,
+       "min_distance" : null,
+       "sounds" : [
+          {
+             "load_on_low_memory" : true,
+             "name" : "sounds/random/splash"
+          }
+       ]
+    },
     
     "ambient.underwater.enter": {
-      "category" : "player",
-      "max_distance" : null,
-      "min_distance" : null,
-      "sounds": [
-        {
-          "load_on_low_memory" : true,
-          "name" : "sounds/random/splash",
-          "volume" : 0.15,
-          "pitch": 1.00
-        },
-        {
-          "name" : "sounds/random/splash",
-          "volume" : 0.15,
-          "pitch": 1.20
-        },
-        {
-          "name" : "sounds/random/splash",
-          "volume" : 0.15,
-          "pitch": 0.80
-        }
-      ]
+      "sounds": []
     },
   
     "ambient.underwater.exit": {

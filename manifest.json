@@ -3,16 +3,28 @@
   "header": {
     "name": "Revival to v1.16",
     "description": "変わってしまったUIを1.16風にできる限り戻しました!!!\nby YuuhaLand",
-    "version": [ 1, 0, 0 ],
-    "uuid": "1aba7688-f80a-4b4f-8c86-333e47977043",
+    "version": [ 1, 0, 1 ],
+    "uuid": "6ac8e41e-7641-4d2b-afdc-d748641370e4",
     "min_engine_version": [ 1, 13, 0 ]
   },
   "modules": [
     {
       "type": "resources",
       "description": "",
-      "version": [ 1, 0, 0 ],
-      "uuid": "09949765-d82a-4675-8cc6-749333269d9d"
+      "version": [ 1, 0, 1 ],
+      "uuid": "6d17e918-1fa4-439c-932b-7e6ec8ba1f1b"
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "lite",
+      "name": "§r§e他のテクスチャパックとの互換性維持 - Compatible mode",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "full",
+      "name": "§r§a通常版 - Full",
+      "memory_tier": 2
     }
   ]
 }

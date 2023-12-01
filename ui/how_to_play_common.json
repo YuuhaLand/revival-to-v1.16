@@ -1,0 +1,140 @@
+{
+  "namespace": "how_to_play_common",
+
+  "dynamic_dialog_screen": {
+    "$screen_background_control": "common_dialogs.background_image"
+  },
+
+  "image": {
+    "type": "image",
+    "layer": 1,
+    "size": [ "100%", "128px" ],
+    "offset": [ 0, 5 ],
+    "anchor_from": "center",
+    "anchor_to": "center"
+  },
+
+  "header_background": {
+    "type": "image",
+    "size": [ "100%", "20px" ],
+    "offset": [ 0, "-2px" ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "texture": "textures/ui/Banners",
+    "controls": [
+      {
+        "header_label": {
+          "type": "label",
+          "color": "$body_text_color",
+          "layer": 1,
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "text_alignment": "center",
+          "max_size": [ "95%", 10 ],
+          "text": "$text"
+        }
+      }
+    ]
+  },
+
+  "header": {
+    "type": "panel",
+    "size": [ "100%", "28px" ],
+    "controls": [
+      { "header@how_to_play_common.header_background": {} }
+    ]
+  },
+
+  "paragraph": {
+    "type": "label",
+    "color": "$body_text_color",
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [ "100%", "default" ],
+    "line_padding": 0,
+    "text": "$text"
+  },
+
+  "paragraph_with_icons@how_to_play_common.paragraph": {
+    "text": "('#pre_process_' + $text)",
+    "bindings": [
+      {
+        "binding_name": "('#pre_process_' + $text)"
+      }
+    ]
+  },
+
+  "paragraph_no_icons@how_to_play_common.paragraph": {
+    "bindings": [
+      {
+        "binding_name": "$input_binding",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "paragraph_with_selective_input@how_to_play_common.paragraph_with_icons": {
+    "line_padding": 4.0,
+    "bindings": [
+      {
+        "binding_name": "('#pre_process_' + $text)"
+      },
+      {
+        "binding_name": "$input_binding",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "paragraph_keyboard@how_to_play_common.paragraph_with_selective_input": {
+    "$input_binding": "#keyboard_being_used"
+  },
+
+  "paragraph_gamepad@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 10.0,
+    "$input_binding": "#gamepad_being_used"
+  },
+
+  "paragraph_rift_controller@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 10.0,
+    "$input_binding": "#rift_controller_being_used"
+  },
+
+  "paragraph_windowsmr_controller@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 10.0,
+    "$input_binding": "#windowsmr_controller_being_used"
+  },
+
+  "paragraph_touch@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 6.0,
+    "$input_binding": "#touch_being_used"
+  },
+
+  "paragraph_touch_classic_dpad_spacing@how_to_play_common.paragraph_with_selective_input": {
+    "$input_binding": "#touch_being_used",
+    "line_padding": 12.0
+  },
+
+  "paragraph_touch_no_icons@how_to_play_common.paragraph_no_icons": {
+    "$input_binding": "#touch_being_used"
+  },
+
+  "paragraph_touch_joystick_tap@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 6.0,
+    "$input_binding": "#touch_joystick_tap_being_used"
+  },
+
+  "paragraph_touch_classic_dpad@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 12.0,
+    "$input_binding": "#touch_classic_dpad_being_used"
+  },
+
+  "paragraph_touch_joystick_crosshair@how_to_play_common.paragraph_with_selective_input": {
+    "line_padding": 6.0,
+    "$input_binding": "#touch_joystick_crosshair_being_used"
+  },
+
+  "paragraph_not_touch@how_to_play_common.paragraph_with_selective_input": {
+    "$input_binding": "#touch_not_being_used"
+  }
+}
