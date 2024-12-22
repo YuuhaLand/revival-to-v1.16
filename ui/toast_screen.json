@@ -1,0 +1,13 @@
+{
+  "namespace": "toast",
+
+  "popup_anim": {
+    "anim_type": "offset",
+    "easing": "spring",
+    "from": "$popup_distance_from",
+    "to": "$popup_distance_to",
+    "duration": 1,
+    "$anim_event_name|default": "toast_animation_finished",
+    "end_event": "$anim_event_name"
+  }
+}

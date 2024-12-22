@@ -11,5 +11,11 @@
     "$checked_hover_image": "textures/ui/TabTopFrontLeftMost",
     "$checked_locked_image": "textures/ui/TabTopFrontLeftMost",
     "$checked_locked_hover_image": "textures/ui/TabTopFrontLeftMost"
+  },
+
+
+  "tab_content/tab_content_search_bar_panel/search_and_filter_panel/text_edit_control": {
+    "$text_edit_box_label_offset": [ 0, 0 ],
+    "$magnifying_glass_enabled" : false
   }
 }

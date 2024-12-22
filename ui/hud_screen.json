@@ -1,0 +1,7 @@
+{
+  "namespace": "hud",
+  
+  "hotbar_slot_image": {
+    "alpha": 0.65
+  }
+}

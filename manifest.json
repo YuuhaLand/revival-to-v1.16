@@ -1,30 +1,18 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Revival to v1.16",
-    "description": "変わってしまったUIを1.16風にできる限り戻しました!!!\nby YuuhaLand",
-    "version": [ 1, 0, 1 ],
-    "uuid": "6ac8e41e-7641-4d2b-afdc-d748641370e4",
+    "name": "Restore Classic v1.0.2",
+    "description": "色々変わってしまったUIなどをできる限り元に戻しました!!\nby YuuhaLand",
+    "version": [ 1, 0, 2 ],
+    "uuid": "3f796362-53cd-4571-ae1e-e8e4bd146f89",
     "min_engine_version": [ 1, 13, 0 ]
   },
   "modules": [
     {
       "type": "resources",
       "description": "",
-      "version": [ 1, 0, 1 ],
-      "uuid": "6d17e918-1fa4-439c-932b-7e6ec8ba1f1b"
-    }
-  ],
-  "subpacks": [
-    {
-      "folder_name": "lite",
-      "name": "§r§e他のテクスチャパックとの互換性維持 - Compatible mode",
-      "memory_tier": 1
-    },
-    {
-      "folder_name": "full",
-      "name": "§r§a通常版 - Full",
-      "memory_tier": 2
+      "version": [ 1, 0, 2 ],
+      "uuid": "0e4bcca8-eb92-46a9-82c0-aeaa64888d2f"
     }
   ]
 }

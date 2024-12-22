@@ -66,6 +66,54 @@
        "pitch" : 1.0,
        "volume" : 1.0
     },
+    "copper" : {
+       "events" : {
+          "break" : {
+             "pitch" : [ 0.80, 1.0 ],
+             "sound" : "dig.copper",
+             "volume" : 1.0
+          },
+          "default" : "",
+          "door.close" : {
+             "sound" : "random.doors"
+          },
+          "door.open" : {
+             "sound" : "random.doors"
+          },
+          "hit" : {
+             "pitch" : 0.50,
+             "sound" : "hit.copper",
+             "volume" : 0.30
+          },
+          "item.use.on" : {
+             "pitch" : 0.80,
+             "sound" : "use.copper"
+          },
+          "place" : {
+             "pitch" : [ 0.80, 1.0 ],
+             "sound" : "dig.copper",
+             "volume" : 1.0
+          },
+          "power.off" : {
+             "pitch" : 0.50,
+             "sound" : "random.click"
+          },
+          "power.on" : {
+             "pitch" : 0.60,
+             "sound" : "random.click"
+          },
+          "trapdoor.close" : {
+             "pitch" : 1.0,
+             "sound" : "open_trapdoor.copper"
+          },
+          "trapdoor.open" : {
+             "pitch" : 1.0,
+             "sound" : "open_trapdoor.copper"
+          }
+       },
+       "pitch" : 1.0,
+       "volume" : 1.0
+    },
     "stone" : {
        "events" : {
           "break" : {

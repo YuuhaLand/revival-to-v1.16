@@ -1,0 +1,50 @@
+{
+  "namespace": "progress",
+
+  "progress_loading_bars": {
+    "$is_realms|default": false,
+    "bindings": [
+      {
+        "ignored": "$is_realms",
+        "binding_name": "#bar_animation_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "progress_title_text": {
+    "text": "$text",
+    "$text": "#title_text",
+    "$is_realms|default": false,
+    "variables": [
+      {
+        "requires": "$is_realms",
+        "$text": "realmJoining.progressTitle"
+      }
+    ]
+  },
+
+  "progress_bar_text": {
+    "text": "$text",
+    "$text": "#progress_text",
+    "$is_realms|default": false,
+    "variables": [
+      {
+        "requires": "$is_realms",
+        "$text": "progressScreen.message.waitingForRealms"
+      }
+    ]
+  },
+
+  "realms_stories_enabled_loading_progress_screen": {
+    "$is_realms": true,
+    "$screen_content": "progress.progress_screen_content",
+    "$screen_bg_content": "common.portal_background"
+  },
+  
+  "realms_stories_loading_progress_screen": {
+    "$is_realms": true,
+    "$screen_content": "progress.progress_screen_content",
+    "$screen_bg_content": "common.portal_background"
+  }
+}

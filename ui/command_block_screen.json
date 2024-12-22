@@ -1,0 +1,7 @@
+{
+  "namespace": "command_block",
+
+  "command_block_screen": {
+    "$screen_bg_content": "common.empty_panel"
+  }
+}

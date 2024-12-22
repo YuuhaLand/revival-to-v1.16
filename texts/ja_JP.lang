@@ -1,4 +1,4 @@
-﻿## 2023リバイバル 昔のテキスト
+﻿## Restore Classic 昔のテキスト
 ## ガバ翻訳も再現しています！
 
 ## Comments can be added anywhere on a valid line by starting with '##'
@@ -1412,7 +1412,7 @@ commands.time.stop=時間 %1$s	#
 commands.title.description=画面のタイトルを操作する。	#
 commands.title.success=titleコマンドは正常に実行されました	#
 commands.titleraw.description=JSON メッセージを使用して画面のタイトルを調整します。	#
-commands.titleraw.success=commands.titleraw.success	#
+commands.titleraw.success=titlerawコマンドは正常に実行されました	#
 commands.toggledownfall.description=天気を切り替える。	#
 commands.tp.description=エンティティ (プレイヤー、モブなど) をテレポートさせる。	#
 commands.tp.notSameDimension=プレイヤーが同じ世界にいないためテレポートすることができません	#
@@ -2626,7 +2626,8 @@ disconnectionScreen.editor.mismatchEditorToVanilla=サーバーはエディタ�
 disconnectionScreen.editor.mismatchVanillaToEditor=サーバーはエディター モード中です。接続に失敗しました。	#
 disconnectionScreen.clientsideGenerationDesync=サーバーとクライアント間で、機能切り替え「クライアント側生成」用の数値設定が異なっています。	#
 disconnectionScreen.editor.cannotUseRayTracing=レイ トレーシングを有効にしたリソース パックは、まだエディター プロジェクトと互換性がありません。	#
-disconnectionScreen.unexpectedPacket=処理不可の予期しない種類のパケットが受信されたため、切断されました。これは、バージョンの不一致またはネットワーク レベルでの破損が原因である可能性があります。	#
+disconnectionScreen.unexpectedPacket=disconnectionScreen.unexpectedPacket
+disconnectionScreen.connectionLost=サーバーとの接続が切断されました
 
 storageSpaceWarningScreen.frontend=容量に十分な空きがありません。十分な空き容量が確保されるまで、この機能へのアクセスは制限されます。	#
 storageSpaceWarningScreen.lowduringgameplay=お使いのデバイスには、Minecraft の世界や設定を保存できる十分な空き容量がありません。新しいデータを今後も保存できるよう、不要な古いデータをいくつか削除することをお勧めします。	#
@@ -5647,8 +5648,8 @@ map.toolTip.scaling=ズーム 1:%s	#
 map.toolTip.level=レベル %s/%s	#
 map.toolTip.unkown=不明な地図	#
 map.toolTip.locked=ロック中	#
-map.position.agent=Agent の位置: %s、%s、%s	#
-map.position=位置: %s、%s、%s	#
+map.position.agent=Agent の位置: %s, %s, %s	#
+map.position=位置: %s, %s, %s	#
 
 mcoServer.title=オンラインの Minecraft 世界	#
 
@@ -6136,7 +6137,6 @@ options.group.audio=効果音	#
 options.group.feedback=フィードバック	#
 options.group.game=ゲーム	#
 options.group.graphics=グラフィック	#
-options.group.graphics.experimental=試験的	#
 options.group.input=操作方法	#
 options.group.multiplayer=マルチプレイヤー	#
 options.group.realms=Realms Alpha に招待されましたか?	#
@@ -6171,7 +6171,7 @@ options.interactionmodel.touch=タッチ	#
 options.interactionmodel.crosshair=クロスヘア	#
 options.interactionmodel.classic=クラシック	#
 options.splitscreenInterfaceOpacity=画面分割時の HUD の不透明度	#
-options.textBackgroundOpacity=Text Background Opacity	#
+options.textBackgroundOpacity=テキスト背景の不透明度	#
 options.hidepaperdoll=人形表示をオフにする	#
 options.showautosaveicon=オートセーブ アイコンを表示する	#
 options.hold=ホールド	#
@@ -6354,7 +6354,7 @@ options.touchSettings=タッチ設定	#
 options.touchscreen=タッチスクリーン モード	#
 options.uiprofile=UI プロフィール	#
 options.uiprofile.classic=クラシック	#
-options.uiprofile.pocket=ポケット	#
+options.uiprofile.pocket=Pocket	#
 options.betaNewDeathScreenToggle=死亡時の新しい画面 (試験的)	#
 options.betaNewDeathScreenToggle.disabled=世界でプレイ中はこの設定を変更できません	#
 options.usetouchpad=操作の分割	#
@@ -7541,11 +7541,9 @@ selectWorld.moreWorldOptions=その他の世界設定...	#
 selectWorld.newWorld=新しい世界	#
 selectWorld.newWorld.copyOf=%s のコピー	#
 selectWorld.newWorld.educationCopyOf=[EDU] %s	#
-selectWorld.worldTags.experimental=試験的機能	#
 ## NOTE: "Realms" is the name of a service and doesn't get localized.
 selectWorld.realmsComingSoon=Realms がまもなく登場!	#
 selectWorld.realmsBeta=Realms Beta	#
-selectWorld.worldTags=%1$s - %2$s	#
 selectWorld.learnMore=さらに詳しく	#
 selectWorld.recreate=再度作成	#
 selectWorld.rename=名前の変更	#
